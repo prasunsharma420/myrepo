@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        label{
+            font-size: 26px;
+        }
+        h1{
+            font-size: 50px;
+            color: greenyellow;
+        }
+        #button:hover{
+            background-color:goldenrod;
+            transition-duration: 1s;
+            text-decoration: underline;
+            color:blue;
+            font-size: 20px;
+        }
+        table{
+        width: 1000px;
+        margin-left: auto;
+        
+        }
+        th{
+            background-color:pink;
+            border: 2px #000000 solid;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>contact number</th>
+                    <th>Aadhar</th>
+                    <th>Address</th>
+                    <th>Permanent Address</th>
+                    <th>Gender</th>
+                    <tbody>
+                </tr>
+            </thead>
+        </tbody>
+    </table>
+    </div>
+<br>
+<br>
+<br>
+
+   <div id="container">
+    <form id="form">
+        <label for="Name">Name:</label>
+        <br>
+        <input id="Name" type="Name" placeholder="Name" required>
+        <br>
+        <label for="Email">Email:</label>
+        <br>
+        <input id="Email" type="Email" placeholder="Email" required>
+        <br>
+        <label for="contact number">contact number:</label>
+        <br>
+        <input id="contact" type="contact number"  placeholder="contact number" required>
+        <br>
+        <label for="Aadhar id"> Aadhar id:</label>
+        <br>
+        <input id="Aadhar" type="Aadhar id"  placeholder="Aadhar id" required>
+        <br>
+        <label for="Address">Address:</label>
+        <br>
+        <input id="Address" type="Address" placeholder="Address" required>
+        <br>
+        <label for="Permanent Address">Permanent Address:</label>
+        <br>
+        <input id="peraddress" type="Permanent Address" placeholder="Permanent Address" required>
+        <br>
+        <!-- <label>Gender:</label>
+        <br>
+        <select id="Gender" required>
+            <option value="">select Gender</option>
+            <option value="mail">mail</option>
+            <option value="femail">femail</option>
+        </select> -->
+        <br>
+        <br>
+        <input id="button" type="submit" placeholder="submit" required>
+    </form>
+   </div>
+</body>
+</html>
+<script src="Registrationform.js"></script>

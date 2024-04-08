@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+       <label for="UserName">UserName:</label>
+        <br>
+        <input id="Name" type="name" placeholder="UserName" required>
+        <br>
+       <label for="Email">Email:</label>
+        <br>
+        <input id="Email" type="Email" placeholder="Email" required>
+        <br>
+        <label for="password">password:</label>
+        <br>
+        <input id="password" type="password" placeholder="password" required>
+        <br>
+        <input type="submit" placeholder="submit" required>
+    </form>
+</body>
+</html>
+<script>
+    var myform = document.getElementById('form');
+    //console.log(myform)
+
+    myform.addEventListener('click', saveData)
+        
+    function saveData(e){
+        e.preventDefault()
+       var name = document.getElementById('Name').value
+       //console.log(name)
+
+       var Email = document.getElementById('Email').value
+       //console.log(Email)
+
+       var password = document.getElementById('password').value
+       //console.log(password)
+
+       const data = {
+        PName : name,
+        Pemail : Email,
+        Ppassword :password
+       }
+       console.log(data)
+    }
+   
+</script>

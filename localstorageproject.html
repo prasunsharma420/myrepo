@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornsilk;
+            color: darksalmon;
+        }
+         #button1:hover{
+            background-color:burlywood;
+            transition-duration: 0s;
+            text-decoration: underline;
+            color:rgb(255, 0, 174);
+            font-size: 15px;
+        }
+        #button2:hover{
+            background-color:rgb(218, 199, 32);
+            transition-duration: 0s;
+            text-decoration: underline;
+            color:cornsilk;
+            font-size: 17px;
+        }
+        #button3:hover{
+            background-color:rgb(218, 199, 32);
+            transition-duration: 0s;
+            text-decoration: underline;
+            color:cornsilk;
+            font-size: 17px;
+        }
+        h1{
+        color: darkkhaki;
+        }
+        input{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="localstorageproject.html">
+                <button id="button2">User Data</button>
+            </a>
+    
+            <a href="savedata.html">
+                <button id="button3">Display data</button>
+            </a>
+        </nav>
+    </div>
+    <h1>User Data</h1>
+    <div>
+        <form id="hiiform">
+            <label id="Name" for="Name">Name:</label>
+            <input type="text" required>
+            <br>
+            <br>
+            <label id="Age" for="Age">Age:</label>
+            <input type="text" required>
+            <br>
+            <br>
+            <label id="Email" for="Email">Email:</label>
+            <input type="text" required>
+            <br>
+            <br>
+            <label id="password" for="password">Password:</label>
+            <input type="text"  required>
+            <br>
+            <br>
+            <label id="image" for="image">Image URL:</label>
+            <input type="text" required>
+            <br>
+            <br>
+            <input id="button1" type="submit" placeholder="submit" required>
+        </form>
+    </div>
+</body>
+</html>
+<script src="localstorage.js"></script>
